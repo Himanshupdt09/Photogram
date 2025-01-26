@@ -31,6 +31,8 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    'channels',
+    'chatapp',
     'mathfilters',
     'posts',
     'users',
@@ -71,8 +73,13 @@ TEMPLATES = [
 ]
 
 WSGI_APPLICATION = "socialproject.wsgi.application"
+ASGI_APPLICATION = "socialproject.asgi.application"
 
-
+CHANNEL_LAYERS={
+    'default':{
+        'BACKEND':'channels.layers.InMemoryChannelLayer'
+    }
+}
 # Database
 # https://docs.djangoproject.com/en/5.1/ref/settings/#databases
 

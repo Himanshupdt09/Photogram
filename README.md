@@ -4,7 +4,7 @@
 
 This project is a feature-rich **Django Web Application** designed to provide a seamless user experience for **registration**, **authentication**, and a **social feed** with interactive functionalities. It allows users to register, log in, log out, and manage their profiles while offering the ability to create posts with images and captions, like and comment on posts, and view an engaging feed of posts by all users.
 
-The application is styled using **Tailwind CSS** for a modern and responsive design and leverages **AJAX** for dynamic interactions like liking posts without page reloads. It also uses Django ORM for efficient database management.
+The application is styled using **Tailwind CSS** for a modern and responsive design and leverages **AJAX** for dynamic interactions like liking posts without page reloads. It also uses Django ORM for efficient database management. Furthermore, **real-time chat functionality** has been implemented using **Django Channels**, enabling users to create rooms and send messages visible to other room participants.
 
 ---
 
@@ -34,7 +34,16 @@ The application is styled using **Tailwind CSS** for a modern and responsive des
   - The number of likes is updated in real-time.
   - Users can comment on posts, and comments are displayed under the respective posts.
 
-### 3. **Responsive Design**
+### 3. **Real-Time Chat**
+- **Room-Based Chat**:
+  - Users can create chat rooms for specific topics.
+  - Messages sent in a room are visible to all participants in real time.
+
+- **Dynamic Messaging**:
+  - Real-time messaging powered by **Django Channels**.
+  - Smooth user experience with instant updates for new messages.
+
+### 4. **Responsive Design**
 - Built with **Tailwind CSS**, ensuring a modern, responsive, and user-friendly interface.
 
 ---
@@ -43,6 +52,7 @@ The application is styled using **Tailwind CSS** for a modern and responsive des
 
 - **Backend Framework**: Django
 - **Frontend**: Tailwind CSS
+- **Real-Time Features**: Django Channels
 - **Database**: SQLite (default, customizable to other databases like PostgreSQL or MySQL)
 - **Dynamic Interactions**: AJAX for real-time actions like liking posts.
 - **ORM**: Django ORM for database management
@@ -104,14 +114,20 @@ The application is styled using **Tailwind CSS** for a modern and responsive des
 - **Login Page**:
   ![Login Page](final_images/login.png)
 
+- **Chat Rooms**:
+  ![Chat Rooms](final_images/rooms.png)
+
+- **Chat Messages**:
+  ![Chat Messages](final_images/chat.png)
+
 ---
 
 ## 📈 Future Scope
 
 - Add support for real-time notifications using Django Channels.
-- Implement user-to-user messaging.
 - Enhance the feed with filtering and sorting options (e.g., most liked, most recent).
 - Integrate with external storage services like AWS S3 for media files.
+- Expand real-time chat features with multimedia messaging.
 
 ---
 
